@@ -61,6 +61,10 @@ user-profile.md 从 95 行全量档案拆为两层：
 
 与 Claude Code 无关的外部模型策略从 memory 移入 Obsidian（`references/model-switching-strategy.md`）。
 
+### feedback-firefox-migration 删除
+
+该教训已被 collaboration-style 覆盖（先讨论再执行），且谨慎操作是通用原则，不需要单独规则。Memory 从 8 减至 7 个文件。
+
 ## 相关
 
 - [[../profile/full-profile]]
