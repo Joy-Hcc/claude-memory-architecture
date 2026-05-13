@@ -40,11 +40,11 @@
 - 是 → memory（行为指令/当前上下文）
 - 否 → Obsidian（需要时才查阅）
 
-### 迁移结果（2026-05-11）
+### 迁移结果（2026-05-13）
 
-- memory：23 → 8 个文件（纯行为指令）
-- Obsidian：35 → 36 个文件（补写 cyber-diary）
-- 15 个知识参考文件从 memory 删除
+- memory：11 个行为指令文件 + 1 个索引（MEMORY.md），零项目文件
+- Obsidian：16 个项目文件
+- 所有项目索引指向 Obsidian，memory 纯行为化
 
 ## 演进（2026-05-12）
 
@@ -64,6 +64,18 @@ user-profile.md 从 95 行全量档案拆为两层：
 ### feedback-firefox-migration 删除
 
 该教训已被 collaboration-style 覆盖（先讨论再执行），且谨慎操作是通用原则，不需要单独规则。Memory 从 8 减至 7 个文件。
+
+## 演进（2026-05-13）
+
+### 项目索引归 Obsidian，memory 纯行为化
+
+- **删除所有 proj-*.md** — 8 个项目缓存文件从 memory 移除
+- **MEMORY.md 项目区全部指向 Obsidian 路径** — memory 只存路标，内容在 Obsidian
+- **存入规则补全** — 知识/项目信息不建 memory 文件，behavior 指令才建
+- **auto-record-project-context 修正** — 新项目写 Obsidian + MEMORY.md 加索引
+- **memory 从 7 → 11 个行为指令文件** — 新增 prefer-deep-discussions、always-check-obsidian-for-past-tasks、auto-record-project-context、user-vision-allround
+
+核心原则：MEMORY.md 保留所有索引（feedback + project 路标），但项目内容文件全在 Obsidian。索引不污染模型——路标和内容是两个东西。
 
 ## 相关
 
